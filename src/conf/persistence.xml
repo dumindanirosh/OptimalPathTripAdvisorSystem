@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="FinalProjectPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.optimalpath.duminda.model.GoogleMapLocation</class>
+    <class>com.optimalpath.duminda.model.LocationCategory</class>
+    <class>com.optimalpath.duminda.model.Location</class>
+    <class>com.optimalpath.duminda.model.User</class>
+    <class>com.optimalpath.duminda.model.ContactUs</class>
+    <class>com.optimalpath.duminda.model.Matrix</class>
+    <class>com.optimalpath.duminda.model.TourPlannerList</class>
+    <class>com.optimalpath.duminda.model.LocationImage</class>
+    <class>com.optimalpath.duminda.model.LocationReview</class>
+    <class>com.optimalpath.duminda.model.HotLocation</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/tourplannerdb?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="root123"/>
+    </properties>
+  </persistence-unit>
+</persistence>
